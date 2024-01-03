@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #719fb0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+header {
+    background-color: #05004e;
+    padding: 0.8em 0;
+    box-shadow: 2px 2px 10px #f1f6f9;
+    }
+
+h1{
+    
+    font-size: 2rem;
+    color: #b85010;
+}
+
+
+
+.titles p{
+    word-wrap:break-word;
+}
+
+.container{
+    width: 90%;
+    /* I set max width to 900px to prevent it to get bigger than the value stated when I expand the
+     window or view the page on a bigger screen. */
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* It will bring the <nav> to the top and in line with the .titles. */
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav ul{
+    list-style: none;
+    /* to make the flex items inline. */
+     display: flex;
+     padding: 0;
+}
+
+/* to give space between the <li>s. */
+nav li{
+    margin-left: 2em;
+}
+
+nav a {
+    text-decoration: none;
+
+}
+nav a:hover,
+nav a:focus {
+  color: #fd5f00;
+}
+
+
+/* 
+all styles in the media queries will be applied from smaller sizes until the maximum width of 640px. 
+*/
+
+
+
+@media (max-width:684px) {
+    .container {
+      text-align: center;
+    }
+
+    .container-nav{
+        flex-direction: column;
+    }
+
+    nav ul{
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+        nav li {
+        margin: 0.8em 0;
+      }
+
+}
